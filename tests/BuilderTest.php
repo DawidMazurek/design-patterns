@@ -5,7 +5,7 @@ class BuilderTest extends \PHPUnit_Framework_TestCase {
 
 
     public function testBuilder() {
-        $builder = new Builder();
+        $builder = new Builder\Builder();
         $this->assertInstanceOf( 'Builder', $builder, "Instance of builder" );
 
     }

@@ -1,10 +1,10 @@
 <?php
 
-class Director {
+class Director
+{
 
     public function __construct() {
 
     }
-
 
 }
