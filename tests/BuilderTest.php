@@ -10,9 +10,9 @@ class BuilderTest extends \PHPUnit_Framework_TestCase {
 
     }
 
-    public function testWillFail() {
+   /* public function testWillFail() {
         $this->assertTrue( false );
-    }
+    }*/
 
 
 }
