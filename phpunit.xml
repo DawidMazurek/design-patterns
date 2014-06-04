@@ -1,4 +1,4 @@
-<phpunit colors="true">
+<phpunit args="--stderr" colors="true">
     <testsuites>
         <testsuite>
             <directory>tests</directory>
