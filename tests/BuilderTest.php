@@ -1,5 +1,5 @@
 <?php
-require_once "../Builder/Builder.php";
+require_once "Builder/Builder.php";
 
 class BuilderTest extends \PHPUnit_Framework_TestCase {
 
