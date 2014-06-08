@@ -9,11 +9,13 @@ class Package
     public $number;
     public $label;
 
-    public function setContainingElementsNumber( $number ) {
+    public function setContainingElementsNumber($number)
+    {
         $this->number = $number;
     }
 
-    public function setLabel( $label ) {
+    public function setLabel($label)
+    {
         $this->label = $label;
     }
 }

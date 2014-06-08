@@ -15,17 +15,16 @@ class PackageBuilder implements ProductBuilderInterface
 
     public function fill()
     {
-        $this->package->setContainingElementsNumber( 5 );
+        $this->package->setContainingElementsNumber(5);
     }
 
     public function addLabel()
     {
-        $this->package->setLabel( "Pack of cigarettes" );
+        $this->package->setLabel('Pack of cigarettes');
     }
 
     public function getProduct()
     {
         return $this->package;
     }
-
 }

@@ -17,12 +17,12 @@ class DrinkBuilder implements ProductBuilderInterface
 
     public function fill()
     {
-        $this->drink->setFilledLitres( 2.5 );
+        $this->drink->setFilledLitres(2.5);
     }
 
     public function addLabel()
     {
-        $this->drink->glueLabel( "Apple Drink" );
+        $this->drink->glueLabel('Apple Drink');
     }
 
     public function getProduct()

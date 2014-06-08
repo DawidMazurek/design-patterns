@@ -32,7 +32,6 @@ class AutoLoader
 
         return null;
     }
-
 }
 
 new AutoLoader;

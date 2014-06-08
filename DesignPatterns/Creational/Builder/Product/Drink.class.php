@@ -9,12 +9,13 @@ class Drink
     public $litres;
     public $label;
 
-    public function setFilledLitres( $litres ) {
+    public function setFilledLitres($litres)
+    {
         $this->litres = $litres;
     }
 
-    public function glueLabel( $label ) {
+    public function glueLabel($label)
+    {
         $this->label = $label;
     }
-
 }

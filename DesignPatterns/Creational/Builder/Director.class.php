@@ -20,5 +20,4 @@ class Director
 
         return $this->builder->getProduct();
     }
-
 }
