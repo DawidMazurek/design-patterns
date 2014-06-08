@@ -1,4 +1,7 @@
 <?php
+
+namespace Autoloader;
+
 /**
  *
  *  AutoLoader
@@ -13,19 +16,21 @@
 
 class AutoLoader
 {
-    public function __construct() {
+    public function __construct()
+    {
         spl_autoload_register(array($this, 'loader'));
     }
 
 
-    public function loader($className) {
-        $path = __DIR__ . DIRECTORY_SEPARATOR . str_replace( '\\', DIRECTORY_SEPARATOR, $className ) .'.class.php';
+    public function loader($className)
+    {
+        $path = __DIR__ . DIRECTORY_SEPARATOR . str_replace('\\', DIRECTORY_SEPARATOR, $className) .'.class.php';
 
         if (is_readable($path)) {
             require_once($path);
         }
 
-        return NULL;
+        return null;
     }
 
 }
