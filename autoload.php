@@ -3,17 +3,9 @@
 namespace Autoloader;
 
 /**
- *
- *  AutoLoader
- *  Dynamic class loader ( namespace-based )
- *
- *  lib path '/lib'
- *
- *  namespace\classname => folder/class
- *
- *
+ * Class AutoLoader
+ * @package Autoloader
  */
-
 class AutoLoader
 {
     /**

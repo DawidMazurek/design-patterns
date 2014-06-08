@@ -2,7 +2,10 @@
 
 namespace DesignPatterns\Creational\Builder;
 
-
+/**
+ * Class DrinkBuilder
+ * @package DesignPatterns\Creational\Builder
+ */
 class DrinkBuilder implements ProductBuilderInterface
 {
     /**

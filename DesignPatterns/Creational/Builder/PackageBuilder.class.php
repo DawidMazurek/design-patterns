@@ -2,7 +2,10 @@
 
 namespace DesignPatterns\Creational\Builder;
 
-
+/**
+ * Class PackageBuilder
+ * @package DesignPatterns\Creational\Builder
+ */
 class PackageBuilder implements ProductBuilderInterface
 {
     /**

@@ -9,6 +9,9 @@ use \DesignPatterns\Creational\Builder\PackageBuilder;
 class BuilderTest extends \PHPUnit_Framework_TestCase
 {
 
+    /**
+     *
+     */
     public function testDrinkBuilder()
     {
 
@@ -18,6 +21,9 @@ class BuilderTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf('\DesignPatterns\Creational\Builder\Product\AbstractProduct', $product, 'Instance of Product\AbstractProduct');
     }
 
+    /**
+     *
+     */
     public function testPackageBuilder()
     {
 

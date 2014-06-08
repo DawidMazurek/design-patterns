@@ -2,7 +2,10 @@
 
 namespace DesignPatterns\Creational\Builder;
 
-
+/**
+ * Class Director
+ * @package DesignPatterns\Creational\Builder
+ */
 class Director
 {
 

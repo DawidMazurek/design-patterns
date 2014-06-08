@@ -2,7 +2,10 @@
 
 namespace DesignPatterns\Creational\Builder\Product;
 
-
+/**
+ * Class Package
+ * @package DesignPatterns\Creational\Builder\Product
+ */
 class Package extends AbstractProduct
 {
     /**
@@ -15,6 +18,9 @@ class Package extends AbstractProduct
      */
     public $label;
 
+    /**
+     * @param int $number
+     */
     public function setContainingElementsNumber($number)
     {
         $this->number = $number;
