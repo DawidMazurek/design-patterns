@@ -1,4 +1,4 @@
-<phpunit args="--stderr" colors="true">
+<phpunit bootstrap="./autoload.php" args="--stderr" colors="true">
     <testsuites>
         <testsuite>
             <directory>tests/</directory>

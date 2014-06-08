@@ -1,10 +1,4 @@
 <?php
-require_once __DIR__ . "/../Creational/Builder/ProductBuilder.class.php";
-require_once __DIR__ . "/../Creational/Builder/PackageBuilder.class.php";
-require_once __DIR__ . "/../Creational/Builder/DrinkBuilder.class.php";
-require_once __DIR__ . "/../Creational/Builder/Director.class.php";
-require_once __DIR__ . "/../Creational/Builder/Product/Drink.class.php";
-require_once __DIR__ . "/../Creational/Builder/Product/Package.class.php";
 
 use DesignPatterns\Creational\Builder\Director;
 use DesignPatterns\Creational\Builder\DrinkBuilder;
