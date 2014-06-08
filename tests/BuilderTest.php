@@ -15,15 +15,16 @@ class BuilderTest extends \PHPUnit_Framework_TestCase
         $director = new Director(new DrinkBuilder());
         $product = $director->build();
         $this->assertInstanceOf('\DesignPatterns\Creational\Builder\Product\Drink', $product, 'Instance of Product\Drink');
-
+        $this->assertInstanceOf('\DesignPatterns\Creational\Builder\Product\AbstractProduct', $product, 'Instance of Product\AbstractProduct');
     }
 
     public function testPackageBuilder()
     {
 
-        $director = new Director( new PackageBuilder() );
+        $director = new Director(new PackageBuilder());
         $product = $director->build();
-        $this->assertInstanceOf('\DesignPatterns\Creational\Builder\Product\package', $product, 'Instance of Product\Package');
+        $this->assertInstanceOf('\DesignPatterns\Creational\Builder\Product\Package', $product, 'Instance of Product\Package');
+        $this->assertInstanceOf('\DesignPatterns\Creational\Builder\Product\AbstractProduct', $product, 'Instance of Product\AbstractProduct');
 
     }
 }

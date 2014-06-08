@@ -3,7 +3,7 @@
 namespace DesignPatterns\Creational\Builder\Product;
 
 
-class Drink
+class Drink extends AbstractProduct
 {
 
     public $litres;

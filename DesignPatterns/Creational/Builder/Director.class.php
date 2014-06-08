@@ -6,11 +6,17 @@ namespace DesignPatterns\Creational\Builder;
 class Director
 {
 
+    /**
+     * @param ProductBuilderInterface $builder
+     */
     public function __construct(ProductBuilderInterface $builder)
     {
         $this->builder = $builder;
     }
 
+    /**
+     * @return Product\AbstractProduct
+     */
     public function build()
     {
 
