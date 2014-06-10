@@ -1,6 +1,6 @@
 <?php
 
-namespace test;
+namespace DesignPatterns\Creational\AbstractFactory\Tests;
 
 use \DesignPatterns\Creational\Builder\Director;
 use \DesignPatterns\Creational\Builder\DrinkBuilder;

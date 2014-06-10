@@ -1,6 +1,6 @@
 <?php
 
-namespace test;
+namespace DesignPatterns\Creational\AbstractFactory\Tests;
 
 use \DesignPatterns\Creational\AbstractFactory\HtmlFactory;
 use \DesignPatterns\Creational\AbstractFactory\XmlFactory;
