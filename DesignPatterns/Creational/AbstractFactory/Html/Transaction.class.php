@@ -20,6 +20,7 @@ class Transaction implements Renderable
 
     public function render()
     {
-        return "<div><p>Transaction number: {$this->number}</p><p>Amount: {$this->amount}</p><p>Currency: {$this->currency}</p></div>";
+        return "<div><p>Transaction number: {$this->number}</p>"
+        . "<p>Amount: {$this->amount}</p><p>Currency: {$this->currency}</p></div>";
     }
 }
