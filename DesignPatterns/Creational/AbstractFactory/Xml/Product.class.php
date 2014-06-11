@@ -1,16 +1,11 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: dawid
- * Date: 10.06.14
- * Time: 21:00
- */
 
 namespace DesignPatterns\Creational\AbstractFactory\Xml;
 
 use DesignPatterns\Creational\AbstractFactory\Renderable;
 
-class Product implements Renderable{
+class Product implements Renderable
+{
 
     private $name;
     private $prize;

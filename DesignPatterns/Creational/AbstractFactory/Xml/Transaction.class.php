@@ -1,16 +1,11 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: dawid
- * Date: 10.06.14
- * Time: 21:00
- */
 
 namespace DesignPatterns\Creational\AbstractFactory\Xml;
 
 use DesignPatterns\Creational\AbstractFactory\Renderable;
 
-class Transaction implements Renderable{
+class Transaction implements Renderable
+{
 
     private $number;
     private $amount;
