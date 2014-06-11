@@ -5,6 +5,10 @@ namespace DesignPatterns\Creational\AbstractFactory\Tests;
 use \DesignPatterns\Creational\AbstractFactory\HtmlFactory;
 use \DesignPatterns\Creational\AbstractFactory\XmlFactory;
 
+/**
+ * Class AbstractFactoryTest
+ * @package DesignPatterns\Creational\AbstractFactory\Tests
+ */
 class AbstractFactoryTest extends \PHPUnit_Framework_TestCase
 {
 
