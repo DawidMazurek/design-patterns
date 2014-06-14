@@ -6,7 +6,8 @@ namespace DesignPatterns\Creational\FactoryMethod;
  * Class FactoryMethod
  * @package DesignPatterns\Creational\FactoryMethod
  */
-abstract class FactoryMethod {
+abstract class FactoryMethod
+{
 
     const CAR = 1;
     const BIKE = 2;

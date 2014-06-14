@@ -9,7 +9,8 @@ use DesignPatterns\Creational\FactoryMethod\ItalianFactory;
  * Class FactoryMethodTest
  * @package DesignPatterns\Creational\FactoryMethod\Tests
  */
-class FactoryMethodTest extends \PHPUnit_Framework_TestCase {
+class FactoryMethodTest extends \PHPUnit_Framework_TestCase
+{
 
     /**
      *

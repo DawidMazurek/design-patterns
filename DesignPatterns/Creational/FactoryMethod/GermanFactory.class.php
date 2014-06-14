@@ -21,7 +21,7 @@ class GermanFactory extends FactoryMethod
         switch($type) {
 
             case self::BIKE:
-               return new Bike();
+                return new Bike();
                 break;
 
             case self::CAR:
