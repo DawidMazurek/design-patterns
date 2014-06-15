@@ -18,11 +18,10 @@ class CarAssemblyLine
 
         $audiCarPrototype = new AudiCarPrototype();
         $collection = [];
-        for ($serialNumber=0; $serialNumber<$number; $serialNumber++)
-        {
+        for ($serialNumber = 0; $serialNumber < $number; $serialNumber++) {
             $car = clone($audiCarPrototype);
             $car->setSerialNumber($serialNumber);
-            $collection []= $car;
+            $collection [] = $car;
         }
         return $collection;
     }

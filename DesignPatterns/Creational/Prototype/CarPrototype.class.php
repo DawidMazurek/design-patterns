@@ -30,7 +30,7 @@ abstract class CarPrototype
      */
     public function setColor($color)
     {
-        $this->color=$color;
+        $this->color = $color;
     }
 
     /**

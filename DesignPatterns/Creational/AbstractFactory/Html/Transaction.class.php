@@ -33,7 +33,7 @@ class Transaction implements Renderable
      */
     public function __construct($number, $amount, $currency)
     {
-        $this->number= $number;
+        $this->number = $number;
         $this->amount = $amount;
         $this->currency = $currency;
     }

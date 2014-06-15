@@ -18,7 +18,7 @@ class GermanFactory extends FactoryMethod
      */
     protected function createVehicle($type)
     {
-        switch($type) {
+        switch ($type) {
 
             case self::BIKE:
                 return new Bike();
