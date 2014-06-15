@@ -20,6 +20,6 @@ class PrototypeTest extends \PHPUnit_Framework_TestCase
         $carAssemblyLine = new CarAssemblyLine();
         $collection = $carAssemblyLine->assemblyAudi($expectedCarsNumber);
         $this->assertCount($expectedCarsNumber, $collection, 'Cars assembled collection');
-        $this->assertContainsOnlyInstancesOf('DesignPatterns\Creational\Prototype\AudiCarPrototype',$collection);
+        $this->assertContainsOnlyInstancesOf('DesignPatterns\Creational\Prototype\AudiCarPrototype', $collection);
     }
 }

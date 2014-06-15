@@ -23,7 +23,7 @@ abstract class CarPrototype
      * @abstract
      * @return void
      */
-    abstract public  function __clone();
+    abstract public function __clone();
 
     /**
      * @param string $color
