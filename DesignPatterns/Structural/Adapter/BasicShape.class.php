@@ -12,36 +12,36 @@ abstract class BasicShape
     /**
      * @var int
      */
-    protected $x;
+    protected $posX;
 
     /**
      * @var int
      */
-    protected $y;
+    protected $posY;
 
     /**
-     * @param int $x
-     * @param int $y
+     * @param int $posX
+     * @param int $posY
      */
-    public function createObjectAt($x, $y)
+    public function createObjectAt($posX, $posY)
     {
-        $this->x = $x;
-        $this->y = $y;
+        $this->posX = $posX;
+        $this->posY = $posY;
     }
 
     /**
-     * @param int $x
+     * @param int $posX
      */
-    public function translateX($x)
+    public function translateX($posX)
     {
-        $this->x += $x;
+        $this->posX += $posX;
     }
 
     /**
-     * @param int $y
+     * @param int $posY
      */
-    public function translateY($y)
+    public function translateY($posY)
     {
-        $this->y += $y;
+        $this->posY += $posY;
     }
 }

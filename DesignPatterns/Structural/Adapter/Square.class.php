@@ -26,6 +26,6 @@ class Square extends BasicShape
      */
     public function getCoords()
     {
-        return ['x' => $this->x, 'y' => $this->y];
+        return ['posX' => $this->posX, 'posY' => $this->posY];
     }
 }

@@ -23,6 +23,6 @@ class AdapterTest extends \PHPUnit_Framework_TestCase
         $shape = new Shape($square);
         $shape->draw(0, 0);
         $shape->moveTo(2, 5);
-        $this->assertSame(['x' => 2, 'y' => 5], $square->getCoords());
+        $this->assertSame(['posX' => 2, 'posY' => 5], $square->getCoords());
     }
 }

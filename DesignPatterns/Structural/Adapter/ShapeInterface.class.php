@@ -9,14 +9,14 @@ namespace DesignPatterns\Structural\Adapter;
 interface ShapeInterface
 {
     /**
-     * @param int $x
-     * @param int $y
+     * @param int $posX
+     * @param int $posY
      */
-    public function draw($x, $y);
+    public function draw($posX, $posY);
 
     /**
-     * @param int $x
-     * @param int $y
+     * @param int $posX
+     * @param int $posY
      */
-    public function moveTo($x, $y);
+    public function moveTo($posX, $posY);
 }
