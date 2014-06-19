@@ -7,6 +7,10 @@ use DesignPatterns\Structural\Facade\Engine;
 use DesignPatterns\Structural\Facade\RobotFacade;
 use DesignPatterns\Structural\Facade\Sensor;
 
+/**
+ * Class FacadeTest
+ * @package DesignPatterns\Structural\Facade\Tests
+ */
 class FacadeTest extends \PHPUnit_Framework_TestCase
 {
     /**

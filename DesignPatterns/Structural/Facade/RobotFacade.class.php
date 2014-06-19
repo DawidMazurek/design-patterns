@@ -34,10 +34,8 @@ class RobotFacade
      */
     public function driveStraight()
     {
-
         while ($this->sensor->isClearWay()) {
             $this->engine->throttle();
         }
     }
 }
-
