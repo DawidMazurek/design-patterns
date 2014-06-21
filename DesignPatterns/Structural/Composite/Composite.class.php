@@ -14,6 +14,9 @@ class Composite implements Component
      */
     private $components = [];
 
+    /**
+     *
+     */
     public function operation()
     {
         foreach($this->components as $component)
@@ -35,7 +38,8 @@ class Composite implements Component
      */
     public function remove(Component $component)
     {
-        foreach($this->components as $key => $comp) {
+        foreach ($this->components as $key => $comp)
+        {
             if( $component === $comp)
             {
                 unset($this->components[$key]);

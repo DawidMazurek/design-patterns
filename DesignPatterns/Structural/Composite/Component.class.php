@@ -6,10 +6,11 @@ namespace DesignPatterns\Structural\Composite;
  * Interface Component
  * @package DesignPatterns\Structural\Composite
  */
-interface Component {
+interface Component
+{
 
     /**
-     * @return mixed
+     *
      */
     public function operation();
 
@@ -29,5 +30,5 @@ interface Component {
      * @param int $number
      * @return Component|false
      */
-    public function getChild($number=0);
+    public function getChild($number = 0);
 }

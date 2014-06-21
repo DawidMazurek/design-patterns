@@ -26,6 +26,10 @@ class Leaf implements Component
     {
         $this->name = $this;
     }
+
+    /**
+     *
+     */
     public function operation()
     {
         $this->color = 'yellow';
@@ -34,16 +38,22 @@ class Leaf implements Component
     /**
      * @param Component $component
      */
-    public function add(Component $component){ }
+    public function add(Component $component)
+    {
+    }
 
     /**
      * @param Component $component
      */
-    public function remove(Component $component){ }
+    public function remove(Component $component)
+    {
+    }
 
     /**
      * @param int $number
      * @return Component|false|void
      */
-    public function getChild($number=0) { }
+    public function getChild($number=0)
+    {
+    }
 }

@@ -19,9 +19,9 @@ class CompositeTest extends \PHPUnit_Framework_TestCase
     {
         $composite = new Composite();
 
-        $composite->add( new Leaf('Leaf 1') );
-        $composite->add( new Leaf('Leaf 2') );
-        $composite->add( new Leaf('Leaf 3') );
+        $composite->add(new Leaf('Leaf 1'));
+        $composite->add(new Leaf('Leaf 2'));
+        $composite->add(new Leaf('Leaf 3'));
 
         $this->assertInstanceOf('\DesignPatterns\Structural\Composite\Component', $composite->getChild(0));
     }
@@ -33,9 +33,9 @@ class CompositeTest extends \PHPUnit_Framework_TestCase
     {
         $composite = new Composite();
 
-        $composite->add( new Leaf('Leaf 1') );
-        $composite->add( new Leaf('Leaf 2') );
-        $composite->add( new Leaf('Leaf 3') );
+        $composite->add(new Leaf('Leaf 1'));
+        $composite->add(new Leaf('Leaf 2'));
+        $composite->add(new Leaf('Leaf 3'));
 
         $this->assertEquals( 'green', $composite->getChild()->color);
         $composite->operation();
@@ -54,7 +54,8 @@ class CompositeTest extends \PHPUnit_Framework_TestCase
         $composite->add( new Leaf('Leaf 3') );
 
 
-        while( $component = $composite->getChild()) {
+        while ($component = $composite->getChild())
+        {
             $composite->remove($component);
         }
 
