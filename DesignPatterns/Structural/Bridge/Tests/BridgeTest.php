@@ -11,10 +11,11 @@ use DesignPatterns\Structural\Bridge\RefinedAbstraction;
  */
 class BridgeTest extends \PHPUnit_Framework_TestCase
 {
-
+    /**
+     *
+     */
     public function testBridge()
     {
-
         $concreteImplementor = new ConcreteImplementor();
         $refinedAbstraction = new RefinedAbstraction();
         $refinedAbstraction->operation($concreteImplementor);
