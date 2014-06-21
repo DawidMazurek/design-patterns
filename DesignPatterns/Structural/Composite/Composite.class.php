@@ -19,8 +19,7 @@ class Composite implements Component
      */
     public function operation()
     {
-        foreach($this->components as $component)
-        {
+        foreach ($this->components as $component) {
             $component->operation();
         }
     }
@@ -30,7 +29,7 @@ class Composite implements Component
      */
     public function add(Component $component)
     {
-        $this->components []= $component;
+        $this->components [] = $component;
     }
 
     /**
@@ -38,10 +37,8 @@ class Composite implements Component
      */
     public function remove(Component $component)
     {
-        foreach ($this->components as $key => $comp)
-        {
-            if( $component === $comp)
-            {
+        foreach ($this->components as $key => $comp) {
+            if ($component === $comp) {
                 unset($this->components[$key]);
             }
         }
@@ -51,7 +48,7 @@ class Composite implements Component
      * @param int $number
      * @return Component|false
      */
-    public function getChild($number=0)
+    public function getChild($number = 0)
     {
         if (!isset($this->components[$number])) {
             return false;

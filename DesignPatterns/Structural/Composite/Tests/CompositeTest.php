@@ -37,9 +37,9 @@ class CompositeTest extends \PHPUnit_Framework_TestCase
         $composite->add(new Leaf('Leaf 2'));
         $composite->add(new Leaf('Leaf 3'));
 
-        $this->assertEquals( 'green', $composite->getChild()->color);
+        $this->assertEquals('green', $composite->getChild()->color);
         $composite->operation();
-        $this->assertEquals( 'yellow', $composite->getChild()->color);
+        $this->assertEquals('yellow', $composite->getChild()->color);
     }
 
     /**
@@ -49,13 +49,12 @@ class CompositeTest extends \PHPUnit_Framework_TestCase
     {
         $composite = new Composite();
 
-        $composite->add( new Leaf('Leaf 1') );
-        $composite->add( new Leaf('Leaf 2') );
-        $composite->add( new Leaf('Leaf 3') );
+        $composite->add(new Leaf('Leaf 1'));
+        $composite->add(new Leaf('Leaf 2'));
+        $composite->add(new Leaf('Leaf 3'));
 
 
-        while ($component = $composite->getChild())
-        {
+        while ($component = $composite->getChild()) {
             $composite->remove($component);
         }
 

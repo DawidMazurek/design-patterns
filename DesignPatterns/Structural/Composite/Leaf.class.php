@@ -24,7 +24,7 @@ class Leaf implements Component
      */
     public function __construct($name)
     {
-        $this->name = $this;
+        $this->name = $name;
     }
 
     /**
@@ -53,7 +53,7 @@ class Leaf implements Component
      * @param int $number
      * @return Component|false|void
      */
-    public function getChild($number=0)
+    public function getChild($number = 0)
     {
     }
 }
