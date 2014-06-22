@@ -37,7 +37,7 @@ class RealSubject
     {
         $result = 1;
 
-        for ($i=2;$i<=$cost;$i++) {
+        for ($i=2; $i<=$cost; $i++) {
             $result*= $i;
         }
         return $result;

@@ -8,15 +8,18 @@ namespace DesignPatterns\Structural\RemoteProxy;
  */
 class Api
 {
-
-    public function getText($id)
+    /**
+     * @param int $subjectId
+     * @return string
+     */
+    public function getText($subjectId)
     {
         $data = [
             1 => ['text'=>'Remote1'],
             2 => ['text'=>'Remote2']
         ];
 
-        $realSubject = new RealSubject($data[$id]);
+        $realSubject = new RealSubject($data[$subjectId]);
         return $realSubject->getText();
     }
 }

@@ -35,7 +35,7 @@ class VirtualProxy extends RealSubject
      */
     private function init()
     {
-        if ( ! $this->wrapped) {
+        if (!$this->wrapped) {
             $this->wrapped = new RealSubject($this->cost);
         }
     }

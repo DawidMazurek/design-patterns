@@ -16,18 +16,21 @@ class SubjectProxy extends RealSubject
     /**
      * @var int
      */
-    protected $id;
+    protected $subjectId;
 
     /**
      * @param Api $api
-     * @param int $id
+     * @param int $subjectId
      */
-    public function __construct(Api $api, $id) {
+    public function __construct(Api $api, $subjectId) {
         $this->api = $api;
-        $this->id  = $id;
+        $this->$subjectId = $subjectId;
     }
 
+    /**
+     * @return string
+     */
     public function getText() {
-        return $this->api->getText($this->id);
+        return $this->api->getText($this->$subjectId);
     }
 }

@@ -13,6 +13,9 @@ use DesignPatterns\Structural\RemoteProxy\SubjectProxy;
 class RemoteProxyTest extends \PHPUnit_Framework_TestCase
 {
 
+    /**
+     *
+     */
     public function testRemoteProxy()
     {
         $api = new Api();

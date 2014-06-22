@@ -25,7 +25,8 @@ class ApiProtection extends Api
      */
     public function __construct(API $api, $limit)
     {
-        $this->api = $api; $this->limit = $limit;
+        $this->api = $api;
+        $this->limit = $limit;
     }
 
     /**
@@ -37,6 +38,9 @@ class ApiProtection extends Api
         return $this->api->doStuff();
     }
 
+    /**
+     * @throws RemoteApiLimit
+     */
     private function count()
     {
         if (++$this->count > $this->limit) {

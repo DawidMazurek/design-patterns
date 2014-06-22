@@ -6,7 +6,8 @@ namespace DesignPatterns\Structural\RemoteProxy;
  * Class RealSubject
  * @package DesignPatterns\Structural\RemoteProxy
  */
-class RealSubject {
+class RealSubject
+{
 
     /**
      * @var array
@@ -16,14 +17,16 @@ class RealSubject {
     /**
      * @param array $data
      */
-    public function __construct(array $data) {
+    public function __construct(array $data)
+    {
         $this->data = $data;
     }
 
     /**
      * @return mixed
      */
-    public function getText() {
+    public function getText()
+    {
         return $this->data['text'];
     }
 }
