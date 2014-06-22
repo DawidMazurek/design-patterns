@@ -25,7 +25,7 @@ class SubjectProxy extends RealSubject
     public function __construct(Api $api, $subjectId)
     {
         $this->api = $api;
-        $this->$subjectId = $subjectId;
+        $this->subjectId = $subjectId;
     }
 
     /**
