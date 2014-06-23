@@ -31,6 +31,6 @@ class FlyweightTest extends \PHPUnit_Framework_TestCase
     public function testFlyweightFactoryIncorrectTypeException()
     {
         $flyweightFactory = new FlyweightFactory();
-        $flyweight = $flyweightFactory->getFlyweight(3, "Flyweight1");
+        $flyweightFactory->getFlyweight(3, "Flyweight1");
     }
 }
