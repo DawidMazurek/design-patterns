@@ -6,7 +6,8 @@ namespace DesignPatterns\Structural\Flyweight;
  * Class FlyweightFactory
  * @package DesignPatterns\Structural\Flyweight
  */
-class FlyweightFactory {
+class FlyweightFactory
+{
 
     const TYPE_A = 1;
     const TYPE_B = 2;
@@ -24,7 +25,7 @@ class FlyweightFactory {
     public function getFlyweight($type, $key)
     {
         $hash = sha1($key);
-        if(!array_key_exists($hash, $this->flyweights)) {
+        if (!array_key_exists($hash, $this->flyweights)) {
             $this->flyweights[$hash] = $this->createFlyweight($type);
         }
 
