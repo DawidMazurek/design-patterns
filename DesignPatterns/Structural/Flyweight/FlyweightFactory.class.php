@@ -34,7 +34,7 @@ class FlyweightFactory
 
     /**
      * @param int $type
-     * @return ConcreteFlyweightA
+     * @return Flyweight
      * @throws IncorrectFlyweightType
      */
     private function createFlyweight($type)
@@ -45,7 +45,7 @@ class FlyweightFactory
                 return new ConcreteFlyweightA();
                 break;
             case self::TYPE_B:
-                return new ConcreteFlyweightA();
+                return new ConcreteFlyweightB();
                 break;
             default:
                 throw new IncorrectFlyweightType('Incorrect type!');
