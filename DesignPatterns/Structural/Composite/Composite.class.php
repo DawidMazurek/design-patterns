@@ -6,11 +6,11 @@ namespace DesignPatterns\Structural\Composite;
  * Class Composite
  * @package DesignPatterns\Structural\Composite
  */
-class Composite implements Component
+class Composite implements ComponentInterface
 {
 
     /**
-     * @var Component[]
+     * @var ComponentInterface[]
      */
     private $components = [];
 
@@ -25,17 +25,17 @@ class Composite implements Component
     }
 
     /**
-     * @param Component $component
+     * @param ComponentInterface $component
      */
-    public function add(Component $component)
+    public function add(ComponentInterface $component)
     {
         $this->components [] = $component;
     }
 
     /**
-     * @param Component $component
+     * @param ComponentInterface $component
      */
-    public function remove(Component $component)
+    public function remove(ComponentInterface $component)
     {
         foreach ($this->components as $key => $comp) {
             if ($component === $comp) {
@@ -46,7 +46,7 @@ class Composite implements Component
 
     /**
      * @param int $number
-     * @return Component|false
+     * @return ComponentInterface|false
      */
     public function getChild($number = 0)
     {

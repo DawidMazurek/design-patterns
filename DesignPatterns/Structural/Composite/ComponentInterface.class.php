@@ -6,7 +6,7 @@ namespace DesignPatterns\Structural\Composite;
  * Interface Component
  * @package DesignPatterns\Structural\Composite
  */
-interface Component
+interface ComponentInterface
 {
 
     /**
@@ -15,20 +15,20 @@ interface Component
     public function operation();
 
     /**
-     * @param Component $component
+     * @param ComponentInterface $component
      *
      */
-    public function add(Component $component);
+    public function add(ComponentInterface $component);
 
     /**
-     * @param Component $component
+     * @param ComponentInterface $component
      *
      */
-    public function remove(Component $component);
+    public function remove(ComponentInterface $component);
 
     /**
      * @param int $number
-     * @return Component|false
+     * @return ComponentInterface|false
      */
     public function getChild($number = 0);
 }

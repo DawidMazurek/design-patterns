@@ -23,7 +23,7 @@ class CompositeTest extends \PHPUnit_Framework_TestCase
         $composite->add(new Leaf('Leaf 2'));
         $composite->add(new Leaf('Leaf 3'));
 
-        $this->assertInstanceOf('\DesignPatterns\Structural\Composite\Component', $composite->getChild(0));
+        $this->assertInstanceOf('\DesignPatterns\Structural\Composite\ComponentInterface', $composite->getChild(0));
     }
 
     /**
