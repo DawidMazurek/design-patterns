@@ -16,7 +16,7 @@ class ConcreteImplementor implements Implementor
     /**
      *
      */
-    public function OperationImpl()
+    public function operationImpl()
     {
         $this->operated = true;
     }

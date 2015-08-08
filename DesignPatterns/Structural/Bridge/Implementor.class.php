@@ -11,5 +11,5 @@ interface Implementor
     /**
      *
      */
-    public function OperationImpl();
+    public function operationImpl();
 }

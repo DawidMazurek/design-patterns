@@ -13,6 +13,6 @@ abstract class Abstraction
      */
     public function operation(Implementor $implementor)
     {
-        $implementor->OperationImpl();
+        $implementor->operationImpl();
     }
 }
