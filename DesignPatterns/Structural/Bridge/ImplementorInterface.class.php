@@ -3,10 +3,10 @@
 namespace DesignPatterns\Structural\Bridge;
 
 /**
- * Interface Implementor
+ * Interface ImplementorInterface
  * @package DesignPatterns\Structural\Bridge
  */
-interface Implementor
+interface ImplementorInterface
 {
     /**
      *
