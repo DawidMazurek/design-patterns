@@ -12,11 +12,6 @@ class Leaf implements Component
     /**
      * @var string
      */
-    private $name = '';
-
-    /**
-     * @var string
-     */
     public $color = 'green';
 
     /**
