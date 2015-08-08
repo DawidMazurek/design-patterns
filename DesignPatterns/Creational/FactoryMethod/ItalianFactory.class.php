@@ -13,7 +13,7 @@ class ItalianFactory extends FactoryMethod
 {
     /**
      * @param $type
-     * @return Vehicle\Vehicle
+     * @return Vehicle\VehicleInterface
      * @throws \InvalidArgumentException
      */
     protected function createVehicle($type)

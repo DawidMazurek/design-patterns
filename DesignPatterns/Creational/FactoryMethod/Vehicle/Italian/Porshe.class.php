@@ -8,13 +8,13 @@
 
 namespace DesignPatterns\Creational\FactoryMethod\Vehicle\Italian;
 
-use DesignPatterns\Creational\FactoryMethod\Vehicle\Vehicle;
+use DesignPatterns\Creational\FactoryMethod\Vehicle\VehicleInterface;
 
 /**
  * Class Porshe
  * @package DesignPatterns\Creational\FactoryMethod\Vehicle\Italian
  */
-class Porshe implements Vehicle
+class Porshe implements VehicleInterface
 {
     /**
      * @var string
