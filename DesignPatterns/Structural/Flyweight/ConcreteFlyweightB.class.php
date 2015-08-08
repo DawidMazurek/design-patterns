@@ -6,7 +6,7 @@ namespace DesignPatterns\Structural\Flyweight;
  * Class ConcreteFlyweightB
  * @package DesignPatterns\Structural\Flyweight
  */
-class ConcreteFlyweightB implements Flyweight
+class ConcreteFlyweightB implements FlyweightInterface
 {
     /**
      *
