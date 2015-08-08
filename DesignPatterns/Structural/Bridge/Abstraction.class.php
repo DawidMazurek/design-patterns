@@ -9,10 +9,10 @@ namespace DesignPatterns\Structural\Bridge;
 abstract class Abstraction
 {
     /**
-     * @param Implementor $implementor
+     * @param ImplementorInterface $implementor
      */
-    public function operation(Implementor $implementor)
+    public function operation(ImplementorInterface $implementor)
     {
-        $implementor->OperationImpl();
+        $implementor->operationImpl();
     }
 }

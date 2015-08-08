@@ -13,14 +13,14 @@ class FlyweightFactory
     const TYPE_B = 2;
 
     /**
-     * @var Flyweight[]
+     * @var FlyweightInterface[]
      */
     private $flyweights = [];
 
     /**
      * @param int $type
      * @param string $key
-     * @return Flyweight
+     * @return FlyweightInterface
      */
     public function getFlyweight($type, $key)
     {

@@ -4,9 +4,9 @@ namespace DesignPatterns\Structural\Flyweight;
 
 /**
  * Class ConcreteFlyweightA
- * @package DesignPatterns\Structural\Flyweight
+ * @package DesignPatterns\Structural\FlyweightInterface
  */
-class ConcreteFlyweightA implements Flyweight
+class ConcreteFlyweightA implements FlyweightInterface
 {
     /**
      *

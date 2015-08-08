@@ -6,13 +6,8 @@ namespace DesignPatterns\Structural\Composite;
  * Class Leaf
  * @package DesignPatterns\Structural\Composite
  */
-class Leaf implements Component
+class Leaf implements ComponentInterface
 {
-
-    /**
-     * @var string
-     */
-    private $name = '';
 
     /**
      * @var string
@@ -36,22 +31,22 @@ class Leaf implements Component
     }
 
     /**
-     * @param Component $component
+     * @param ComponentInterface $component
      */
-    public function add(Component $component)
+    public function add(ComponentInterface $component)
     {
     }
 
     /**
-     * @param Component $component
+     * @param ComponentInterface $component
      */
-    public function remove(Component $component)
+    public function remove(ComponentInterface $component)
     {
     }
 
     /**
      * @param int $number
-     * @return Component|false|void
+     * @return ComponentInterface|false|void
      */
     public function getChild($number = 0)
     {

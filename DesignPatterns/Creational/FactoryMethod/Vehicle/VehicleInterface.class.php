@@ -12,7 +12,7 @@ namespace DesignPatterns\Creational\FactoryMethod\Vehicle;
  * Interface Vehicle
  * @package DesignPatterns\Creational\FactoryMethod\Vehicle
  */
-interface Vehicle
+interface VehicleInterface
 {
     /**
      * @param string $color

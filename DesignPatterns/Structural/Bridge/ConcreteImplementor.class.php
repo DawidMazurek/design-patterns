@@ -6,7 +6,7 @@ namespace DesignPatterns\Structural\Bridge;
  * Class ConcreteImplementor
  * @package DesignPatterns\Structural\Bridge
  */
-class ConcreteImplementor implements Implementor
+class ConcreteImplementor implements ImplementorInterface
 {
     /**
      * @var bool
@@ -16,7 +16,7 @@ class ConcreteImplementor implements Implementor
     /**
      *
      */
-    public function OperationImpl()
+    public function operationImpl()
     {
         $this->operated = true;
     }

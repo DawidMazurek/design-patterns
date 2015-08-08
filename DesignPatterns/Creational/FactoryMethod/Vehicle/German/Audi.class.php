@@ -8,13 +8,13 @@
 
 namespace DesignPatterns\Creational\FactoryMethod\Vehicle\German;
 
-use DesignPatterns\Creational\FactoryMethod\Vehicle\Vehicle;
+use DesignPatterns\Creational\FactoryMethod\Vehicle\VehicleInterface;
 
 /**
  * Class Audi
  * @package DesignPatterns\Creational\FactoryMethod\Vehicle\German
  */
-class Audi implements Vehicle
+class Audi implements VehicleInterface
 {
     /**
      * @var string

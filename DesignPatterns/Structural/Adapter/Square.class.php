@@ -8,10 +8,6 @@ namespace DesignPatterns\Structural\Adapter;
  */
 class Square extends BasicShape
 {
-    /**
-     * @var string
-     */
-    private $color;
 
     /**
      * @param string $color
