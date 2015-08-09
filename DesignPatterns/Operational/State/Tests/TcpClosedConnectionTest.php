@@ -4,11 +4,11 @@
 namespace DesignPatterns\Operational\State\Tests;
 
 
-use DesignPatterns\Operational\State\State\TCPClosed;
-use DesignPatterns\Operational\State\State\TCPEstablished;
-use DesignPatterns\Operational\State\State\TCPListen;
-use DesignPatterns\Operational\State\State\TCPState;
-use DesignPatterns\Operational\State\TCPConnection\TCPConnection;
+use DesignPatterns\Operational\State\State\TcpClosed;
+use DesignPatterns\Operational\State\State\TcpEstablished;
+use DesignPatterns\Operational\State\State\TcpListen;
+use DesignPatterns\Operational\State\State\TcpState;
+use DesignPatterns\Operational\State\TCPConnection\TcpConnection;
 
 class TCPChangeStateTest extends \PHPUnit_Framework_TestCase
 {
@@ -16,10 +16,10 @@ class TCPChangeStateTest extends \PHPUnit_Framework_TestCase
     /**
      * @dataProvider changeStateDataProvider
      */
-    public function testChangeState(TCPState $originalState, TCPState $targetState)
+    public function testChangeState(TcpState $originalState, TcpState $targetState)
     {
 
-        $TCPConnection = new TCPConnection($originalState);
+        $TCPConnection = new TcpConnection($originalState);
         $TCPConnection->changeState($targetState);
 
         $expectedState = get_class($targetState);
@@ -33,24 +33,24 @@ class TCPChangeStateTest extends \PHPUnit_Framework_TestCase
     public function changeStateDataProvider()
     {
         return [
-            [new TCPClosed(), new TCPEstablished()],
-            [new TCPClosed(), new TCPClosed()],
-            [new TCPClosed(), new TCPListen()],
+            [new TcpClosed(), new TcpEstablished()],
+            [new TcpClosed(), new TcpClosed()],
+            [new TcpClosed(), new TcpListen()],
 
-            [new TCPEstablished(), new TCPEstablished()],
-            [new TCPEstablished(), new TCPClosed()],
-            [new TCPEstablished(), new TCPListen()],
+            [new TcpEstablished(), new TcpEstablished()],
+            [new TcpEstablished(), new TcpClosed()],
+            [new TcpEstablished(), new TcpListen()],
 
-            [new TCPListen(), new TCPEstablished()],
-            [new TCPListen(), new TCPClosed()],
-            [new TCPListen(), new TCPListen()]
+            [new TcpListen(), new TcpEstablished()],
+            [new TcpListen(), new TcpClosed()],
+            [new TcpListen(), new TcpListen()]
         ];
     }
 
     /**
      * @dataProvider openDataProvider
      */
-    public function testOpen(TCPState $originalState, TCPState $targetState)
+    public function testOpen(TcpState $originalState, TcpState $targetState)
     {
         $TCPConnection = new TCPConnection($originalState);
         $TCPConnection->open();
@@ -64,16 +64,16 @@ class TCPChangeStateTest extends \PHPUnit_Framework_TestCase
     public function openDataProvider()
     {
         return [
-            [new TCPClosed(), new TCPEstablished()],
-            [new TCPEstablished(), new TCPEstablished()],
-            [new TCPListen(), new TCPEstablished()]
+            [new TcpClosed(), new TcpEstablished()],
+            [new TcpEstablished(), new TcpEstablished()],
+            [new TcpListen(), new TcpEstablished()]
         ];
     }
 
     /**
      * @dataProvider closeDataProvider
      */
-    public function testClose(TCPState $originalState, TCPState $targetState)
+    public function testClose(TcpState $originalState, TcpState $targetState)
     {
         $TCPConnection = new TCPConnection($originalState);
         $TCPConnection->close();
@@ -87,16 +87,16 @@ class TCPChangeStateTest extends \PHPUnit_Framework_TestCase
     public function closeDataProvider()
     {
         return [
-            [new TCPClosed(), new TCPClosed()],
-            [new TCPEstablished(), new TCPClosed()],
-            [new TCPListen(), new TCPClosed()]
+            [new TcpClosed(), new TcpClosed()],
+            [new TcpEstablished(), new TcpClosed()],
+            [new TcpListen(), new TcpClosed()]
         ];
     }
 
     /**
      * @dataProvider acknowledgeDataProvider
      */
-    public function testAcknowledge(TCPState $originalState, TCPState $targetState)
+    public function testAcknowledge(TcpState $originalState, TcpState $targetState)
     {
         $TCPConnection = new TCPConnection($originalState);
         $TCPConnection->acknowledge();
@@ -110,9 +110,9 @@ class TCPChangeStateTest extends \PHPUnit_Framework_TestCase
     public function acknowledgeDataProvider()
     {
         return [
-            [new TCPClosed(), new TCPListen()],
-            [new TCPEstablished(), new TCPListen()],
-            [new TCPListen(), new TCPListen()]
+            [new TcpClosed(), new TcpListen()],
+            [new TcpEstablished(), new TcpListen()],
+            [new TcpListen(), new TcpListen()]
         ];
     }
 }

@@ -6,7 +6,7 @@ namespace DesignPatterns\Operational\State\State;
 
 use DesignPatterns\Operational\State\TCPConnection\TCPConnection;
 
-abstract class TCPState
+abstract class TcpState
 {
     /**
      * @param TCPConnection $TCPConnection
@@ -25,15 +25,15 @@ abstract class TCPState
 
     /**
      * @param TCPConnection $TCPConnection
-     * @param TCPState $TCPState
+     * @param TcpState $TCPState
      */
-    public function changeState(TCPConnection $TCPConnection, TCPState $TCPState)
+    public function changeState(TCPConnection $TCPConnection, TcpState $TCPState)
     {
         $TCPConnection->changeState($TCPState);
     }
 
     /**
-     * @return TCPState
+     * @return TcpState
      */
     public static function Instance()
     {

@@ -4,20 +4,20 @@
 namespace DesignPatterns\Operational\State\TCPConnection;
 
 
-use DesignPatterns\Operational\State\State\TCPState;
+use DesignPatterns\Operational\State\State\TcpState;
 
 class TCPConnection
 {
 
     /**
-     * @var TCPState
+     * @var TcpState
      */
     protected $TCPState;
 
     /**
-     * @param TCPState $TCPState
+     * @param TcpState $TCPState
      */
-    public function __construct(TCPState $TCPState)
+    public function __construct(TcpState $TCPState)
     {
         $this->TCPState = $TCPState;
     }
@@ -47,15 +47,15 @@ class TCPConnection
     }
 
     /**
-     * @param TCPState $TCPState
+     * @param TcpState $TCPState
      */
-    public function changeState(TCPState $TCPState)
+    public function changeState(TcpState $TCPState)
     {
         $this->TCPState = $TCPState;
     }
 
     /**
-     * @return TCPState
+     * @return TcpState
      */
     public function getState()
     {

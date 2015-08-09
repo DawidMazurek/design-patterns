@@ -6,14 +6,14 @@ namespace DesignPatterns\Operational\State\State;
 
 use DesignPatterns\Operational\State\TCPConnection\TCPConnection;
 
-class TCPEstablished extends TCPState
+class TcpEstablished extends TcpState
 {
     /**
      * @param TCPConnection $TCPConnection
      */
     public function open(TCPConnection $TCPConnection)
     {
-        $this->changeState($TCPConnection, TCPEstablished::Instance());
+        $this->changeState($TCPConnection, TcpEstablished::Instance());
     }
 
     /**
@@ -21,7 +21,7 @@ class TCPEstablished extends TCPState
      */
     public function close(TCPConnection $TCPConnection)
     {
-        $this->changeState($TCPConnection, TCPClosed::Instance());
+        $this->changeState($TCPConnection, TcpClosed::Instance());
     }
 
     /**
@@ -29,6 +29,6 @@ class TCPEstablished extends TCPState
      */
     public function acknowledge(TCPConnection $TCPConnection)
     {
-        $this->changeState($TCPConnection, TCPListen::Instance());
+        $this->changeState($TCPConnection, TcpListen::Instance());
     }
 }
