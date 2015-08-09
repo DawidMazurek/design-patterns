@@ -35,7 +35,7 @@ abstract class TcpState
     /**
      * @return TcpState
      */
-    public static function Instance()
+    public static function instance()
     {
         static $instance;
         if (!$instance[__CLASS__] instanceof static) {

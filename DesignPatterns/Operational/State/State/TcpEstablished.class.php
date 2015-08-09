@@ -13,7 +13,7 @@ class TcpEstablished extends TcpState
      */
     public function open(TCPConnection $TCPConnection)
     {
-        $this->changeState($TCPConnection, TcpEstablished::Instance());
+        $this->changeState($TCPConnection, TcpEstablished::instance());
     }
 
     /**
@@ -21,7 +21,7 @@ class TcpEstablished extends TcpState
      */
     public function close(TCPConnection $TCPConnection)
     {
-        $this->changeState($TCPConnection, TcpClosed::Instance());
+        $this->changeState($TCPConnection, TcpClosed::instance());
     }
 
     /**
@@ -29,6 +29,6 @@ class TcpEstablished extends TcpState
      */
     public function acknowledge(TCPConnection $TCPConnection)
     {
-        $this->changeState($TCPConnection, TcpListen::Instance());
+        $this->changeState($TCPConnection, TcpListen::instance());
     }
 }
