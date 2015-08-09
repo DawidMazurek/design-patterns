@@ -8,5 +8,7 @@ php:
 - hhvm
 
 before_script:
+- composer config -g github-oauth.github.com $GITHUB_ACCESS_TOKEN
+- composer self-update
 - composer require codeclimate/php-test-reporter --dev
-- composer install
+- composer install --prefer-dist --no-interaction
