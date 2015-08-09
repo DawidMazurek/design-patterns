@@ -1,7 +1,7 @@
-<phpunit bootstrap="./autoload.php" args="--stderr" colors="true">
+<phpunit bootstrap="./bootstrap.php" args="--stderr" colors="true">
     <testsuites>
         <testsuite>
-            <directory>./</directory>
+            <directory>./DesignPatterns/</directory>
         </testsuite>
     </testsuites>
     <logging>
