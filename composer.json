@@ -1,5 +1,5 @@
 {
-    "name": "DawidMazurek/design-patterns",
+    "name": "dawidmazurek/design-patterns",
     "description": "Project showing php implementation of selected programming design patterns",
     "license": "GPL-3.0+",
     "require": {
