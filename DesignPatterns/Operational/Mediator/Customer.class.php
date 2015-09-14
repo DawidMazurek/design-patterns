@@ -4,12 +4,19 @@
 namespace DesignPatterns\Operational\Mediator;
 
 
+use DesignPatterns\Operational\Mediator\ValueObject\Float as FloatValueObject;
+
 class Customer {
 
     /**
      * @var DirectorInterface
      */
     protected $director;
+
+    /**
+     * @var float
+     */
+    public $balance;
 
     /**
      * @param DirectorInterface $director
@@ -20,10 +27,10 @@ class Customer {
     }
 
     /**
-     * @param $amount
+     * @param FloatValueObject $amount
      */
-    public function changeAccountBalance($amount)
+    public function changeAccountBalance(FloatValueObject $amount)
     {
-
+        $this->balance += $amount->getValue();
     }
 }

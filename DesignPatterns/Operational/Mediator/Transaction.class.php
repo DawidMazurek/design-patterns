@@ -4,6 +4,8 @@
 namespace DesignPatterns\Operational\Mediator;
 
 
+use DesignPatterns\Operational\Mediator\ValueObject\Float;
+
 class Transaction {
 
     /**
@@ -15,6 +17,11 @@ class Transaction {
      * @var int
      */
     public $status;
+
+    /**
+     * @var Float
+     */
+    public $amount;
 
     /**
      * @var DirectorInterface

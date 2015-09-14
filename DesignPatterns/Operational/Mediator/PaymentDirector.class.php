@@ -41,6 +41,12 @@ class PaymentDirector implements DirectorInterface
      */
     public function transactionPaid(Transaction $transaction)
     {
-        $this->transactionRepository->changeTransactionStatus($transaction->id, $transaction->status);
+        $actions = function() use($transaction) {
+            $this->transactionRepository->changeTransactionStatus($transaction->id,$transaction->status);
+            $this->customer->changeAccountBalance($transaction->amount);
+        };
+
+        $transactionPaidExceptionHandlerProxy = new PaymentDirectorExceptionHandler($this->customer, $this->transactionRepository);
+        $transactionPaidExceptionHandlerProxy->transactionPaid($actions);
     }
 }
